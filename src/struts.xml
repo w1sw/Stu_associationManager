@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="default" namespace="/" extends="struts-default">
+		
+	</package>
+	<!-- 用户操作 -->
+	<package name="users" namespace="/" extends="struts-default">
+		<action name="UsersRegisted" class="action.UsersAction">  		
+	  		<result name="registed_success">/index.jsp</result>
+	  	</action>
+	  	<action name="UsersQuery" class="action.UsersAction">  		
+	  		<result name="query_success">/back_Filmmanager.jsp</result>
+	  	</action>
+	</package>
+	<!-- 社团操作 -->
+	<package name="association" namespace="/" extends="struts-default">
+		<action name="AssoRegisted" class="action.AssociationsAction">
+			<result name="assoregisted_success">/index.jsp</result>
+		</action>
+	</package>
+	
+</struts>    
